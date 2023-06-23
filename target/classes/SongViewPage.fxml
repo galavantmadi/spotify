@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SongViewController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="180.0" prefWidth="384.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="173.0" prefWidth="100.0" spacing="5.0">
+                    <children>
+                        <TextField fx:id="artistNameTXT" />
+                        <TextField fx:id="albumNameTXT" />
+                        <TextField fx:id="songNameTXT" />
+                        <TextField fx:id="urlTXT" />
+                    </children>
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="125.0" prefWidth="140.0" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER" text="نام خواننده">
+                            <VBox.margin>
+                                <Insets left="37.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" text="نام آلبوم" />
+                        <Label alignment="CENTER" text="نام آهنگ">
+                            <VBox.margin>
+                                <Insets left="22.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" text="مسیر">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </VBox>
+            </children>
+            <padding>
+                <Insets right="30.0" />
+            </padding></HBox>
+        <VBox alignment="CENTER" prefHeight="60.0" prefWidth="384.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="384.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="stopBTN" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="توقف آهنگ" />
+                        <Button fx:id="downloadBTN" mnemonicParsing="false" text="پخش آهنگ" />
+                    </children>
+                </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="favoriteBTN" mnemonicParsing="false" text="علاقه مندی" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+                <Label fx:id="resultLBL" prefHeight="17.0" prefWidth="173.0" />
+            </children>
+        </VBox>
+    </children>
+</VBox>
